@@ -1,12 +1,23 @@
 {
-  "name": "contacts",
+  "name": "@contacts/core",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "type": "commonjs",
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "w0rn",
+    "email": "gleb.vdovichenko@bk.ru"
+  },
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "@trivago/prettier-plugin-sort-imports" : "^5.2.2"
+  },
+  "exports": {
+    "prettier": "./src/prettier.config.mjs"
+  },
   "license": "ISC"
 }
